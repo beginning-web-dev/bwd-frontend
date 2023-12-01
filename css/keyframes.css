@@ -1,0 +1,46 @@
+/* Keyframes for jumbotron animations */
+@keyframes zoom-jumbotron {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+@keyframes zoom-heading {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes zoom-logo {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes translateP {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes translate-button {
+    0% {
+        opacity: 0%;
+    }
+    30% {
+        opacity: 0%;
+        transform: translateY(50px);
+    }
+}
