@@ -3,16 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
 
-/* select everything, 
-everything that is a before element, 
+/* select everything,
+everything that is a before element,
 and everything that is and after element
 set box-sizing to border-box */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-/* remove margin form body 
-set initial background color 
+/* remove margin form body
+set initial background color
 set font family */
 body {
     margin: 0;
@@ -41,7 +41,7 @@ height needs to be adjusted once header is complete to match the template of the
 add transparent background color
 set initial height and width
 make button round
-set display to flex 
+set display to flex
 justify and align content to center
 remove the underline
 set initial font size
@@ -90,7 +90,7 @@ set initial font size*/
 
 /* Remove margin from h1 so the broken up title sits together
 animate*/
-.jumbotron-inner h1 { 
+.jumbotron-inner h1 {
     margin: 0;
     animation: zoom-heading var(--jumbotron-animation-time) ease forwards;
 }
@@ -136,6 +136,35 @@ change content color*/
     background-color: var(--logo-primary);
     color: #fff;
 }
+
+
+
+/*  Login page  */
+.login-wrapper {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper form {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-wrapper form > div {
+    justify-content: flex-end;
+}
+
+
+/*  Utilities  */
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
 
 /* breakpoints to increase size of certian elements and texts based on the display width*/
 @media all and (min-width: 481px) {
