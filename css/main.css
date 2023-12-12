@@ -72,6 +72,8 @@ change content color to non transparent variable*/
 .jumbotron-left,
 .jumbotron-right {
     width: 10vw;
+    display: flex;
+    justify-content: center;
 }
 
 /* set jumbotron-inner width to 70% of the view width
