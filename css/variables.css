@@ -1,0 +1,23 @@
+:root {
+    /* initial body background color*/
+    --body-color: rgba(255, 255, 255, 1);
+
+    /* downloaded logo from old site and used a color picker for the hex then converted to rgba */
+    --logo-primary: rgba(82, 15, 169, 1);
+    --logo-secondary: rgba(255, 234, 0, 1);
+
+    /* transparent versions of the logo colors */
+    --logo-primary-transparent: rgba(82, 15, 169, .3);
+    --logo-secondary-transparent: rgba(255, 234, 0, .3);
+
+    /* arrow button background colors */
+    --arrow-button-backgroud-transparent: rgba(1, 1, 1, .3);
+    --arrow-button-background-color-hover: rgba(1, 1, 1, 1);
+
+   /* jumbotron specific variables */
+    --jumbotron-inner-button-text-color: rgba(51, 51, 51, 1);
+    --jumbotron-animation-time: 1.5s;
+    --jumbotron-height: 100vh;
+    --jumbotron-width: 100vw;
+    --jumbotron-background: url(/assets/images/jumbotron.jpg);
+}

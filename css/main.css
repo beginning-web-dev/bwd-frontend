@@ -1,0 +1,217 @@
+@import "variables.css";
+@import "keyframes.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
+
+/* select everything,
+everything that is a before element,
+and everything that is and after element
+set box-sizing to border-box */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* remove margin form body
+set initial background color
+set font family */
+body {
+    margin: 0;
+    background-color: var(--body-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* make the jumbotron display children in a centered row
+add background image to jumbotron
+center and size background image
+set height and width of jumbotron to variables
+height needs to be adjusted once header is complete to match the template of the mock*/
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--jumbotron-background);
+    background-position: center;
+    background-size: cover;
+    height: var(--jumbotron-height);
+    width: var(--jumbotron-width);
+    animation: zoom-jumbotron var(--jumbotron-animation-time) ease forwards;
+}
+
+/* set arrow button position to absolute so it sits on top
+add transparent background color
+set initial height and width
+make button round
+set display to flex
+justify and align content to center
+remove the underline
+set initial font size
+set color of content to transparent color variable*/
+.arrow-button {
+    position: absolute;
+    background-color: var(--arrow-button-backgroud-transparent);
+    width: 32px;
+    height: 32px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--logo-primary-transparent)
+}
+
+/* On Hover
+make button background-color darker
+change content color to non transparent variable*/
+.arrow-button:hover {
+    background-color:var(--arrow-button-background-color-hover);
+    color:  var(--logo-primary);
+}
+
+/*set width of jumbotron left and right because when I dont the left arrow ends up inside the jumbotron-inner element*/
+.jumbotron-left,
+.jumbotron-right {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* set jumbotron-inner width to 70% of the view width
+make jumbotron-inner display children in a centered column
+set color of content to logo-primary variable
+set initial font size*/
+.jumbotron-inner {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--logo-primary);
+    font-size: 9px;
+}
+
+/* Remove margin from h1 so the broken up title sits together
+animate*/
+.jumbotron-inner h1 {
+    margin: 0;
+    animation: zoom-heading var(--jumbotron-animation-time) ease forwards;
+}
+
+/* set initial max width of logo
+animate*/
+.jumbotron-logo {
+    max-width: 50%;
+    animation: zoom-logo var(--jumbotron-animation-time) ease forwards;
+}
+
+/* set color of .jumbotron-inner p element to logo secondary variable
+animate*/
+.jumbotron-inner p {
+    color: var(--logo-secondary);
+    animation: translateP var(--jumbotron-animation-time) ease-in-out forwards;
+}
+
+/* set initial height and width of jumbotron-inner-button
+set color of content
+set background color to color2 variable
+round the enged of the button
+remove underline
+set element to display content in the center
+*/
+.jumbotron-inner-button {
+    width: 75px;
+    height: 30px;
+    color: var(--jumbotron-inner-button-text-color);
+    background-color:var(--logo-secondary);
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: translate-button var(--jumbotron-animation-time) ease forwards;
+}
+
+/* on button hover
+change background color to color 2 variable
+change content color*/
+.jumbotron-inner-button:hover {
+    background-color: var(--logo-primary);
+    color: #fff;
+}
+
+
+
+/*  Login page  */
+.login-wrapper {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper form {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-wrapper form > div {
+    justify-content: flex-end;
+}
+
+
+/*  Utilities  */
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+
+/* breakpoints to increase size of certian elements and texts based on the display width*/
+@media all and (min-width: 481px) {
+    .jumbotron-inner {
+        font-size: 12px;
+    }
+    .arrow-button {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+    .jumbotron-inner-button {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .jumbotron-inner {
+        font-size: 20px;
+    }
+    .jumbotron-inner-button {
+        width: 125px;
+        height: 50px;
+    }
+    .arrow-button {
+        height: 50px;
+        width: 50px;
+        font-size: 40pz;
+    }
+    .jumbotron-logo {
+        max-width: 100%;
+    }
+}
+
+@media all and (min-width: 1025px) {
+    .jumbotron-inner {
+        font-size: 29px;
+    }
+    .jumbotron-inner p {
+        font-size: 20px;
+    }
+    .jumbotron-inner-button {
+        width: 150px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
