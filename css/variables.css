@@ -18,6 +18,5 @@
     --jumbotron-inner-button-text-color: rgba(51, 51, 51, 1);
     --jumbotron-animation-time: 1.5s;
     --jumbotron-height: 100vh;
-    --jumbotron-width: 100vw;
     --jumbotron-background: url(/assets/images/jumbotron.jpg);
 }
