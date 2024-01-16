@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* select everything,
 everything that is a before element,
 and everything that is and after element
@@ -11,14 +16,85 @@ set box-sizing to border-box */
     box-sizing: border-box;
 }
 
+html {
+    font-size: 12px;
+}
+
 /* remove margin form body
 set initial background color
 set font family */
 body {
     margin: 0;
+    padding: 0;
+    font-size: 12px;
     background-color: var(--body-color);
     font-family: 'Montserrat', sans-serif;
 }
+
+header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+header div:first-child {
+    position: absolute;
+}
+
+header div:last-child {
+    position: absolute;
+    right: 0;
+}
+
+nav {
+    /*padding: 20px 80px 20px 30px;*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 1.5rem;
+}
+
+a:hover {
+    color: var(--logo-secondary);
+}
+
+.bgColor {
+    transition: all 1s;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .5);
+}
+.login {
+    border: none;
+    outline: none;
+    margin-left: 40px;
+    border-radius: 12px;
+    padding: 10px 30px;
+    background-color: white;
+    color: black;
+}
+.login:hover {
+    background-color: rgb(56, 54, 54);
+    color: white;
+}
+
 
 /* make the jumbotron display children in a centered row
 add background image to jumbotron
@@ -33,7 +109,6 @@ height needs to be adjusted once header is complete to match the template of the
     background-position: center;
     background-size: cover;
     height: var(--jumbotron-height);
-    width: var(--jumbotron-width);
     animation: zoom-jumbotron var(--jumbotron-animation-time) ease forwards;
 }
 
@@ -119,11 +194,10 @@ remove underline
 set element to display content in the center
 */
 .jumbotron-inner-button {
-    width: 75px;
-    height: 30px;
     color: var(--jumbotron-inner-button-text-color);
     background-color:var(--logo-secondary);
     border-radius: 10px;
+    padding: 1rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -144,6 +218,7 @@ change content color*/
 /*  Login page  */
 .login-wrapper {
     height: 100vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -167,7 +242,6 @@ change content color*/
     display: block;
 }
 
-
 /* breakpoints to increase size of certian elements and texts based on the display width*/
 @media all and (min-width: 481px) {
     .jumbotron-inner {
@@ -179,7 +253,6 @@ change content color*/
         font-size: 30px;
     }
     .jumbotron-inner-button {
-        width: 100px;
         height: 35px;
     }
 }
@@ -189,13 +262,12 @@ change content color*/
         font-size: 20px;
     }
     .jumbotron-inner-button {
-        width: 125px;
         height: 50px;
     }
     .arrow-button {
         height: 50px;
         width: 50px;
-        font-size: 40pz;
+        font-size: 40px;
     }
     .jumbotron-logo {
         max-width: 100%;
@@ -210,7 +282,6 @@ change content color*/
         font-size: 20px;
     }
     .jumbotron-inner-button {
-        width: 150px;
         height: 50px;
         font-size: 22px;
     }
