@@ -7,18 +7,6 @@
     --primary-dark: #333;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-
-    /* Screen Sizes */
-    --mobile: 480px;
-    --tablet: 768px;
-    --desktop: 1024px;
-    --desktop-large: 1280px;
-}
-
-body {
-    font-size: 2rem;
-
-    /* background-color: var(--primary-dark); */
 }
 
 /* FOOTER */
@@ -32,6 +20,8 @@ footer {
     flex-direction: column;
     padding: 2rem 1rem;
 
+    font-size: 1.6rem;
+
     a {
         color: white;
     }
@@ -40,7 +30,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
 
     .col {
@@ -102,7 +91,7 @@ footer {
 }
 
 /* DESKTOP */
-@media (min-width: var(--desktop)) {}
+@media (min-width: 1024px) {}
 
 /* DESKTOP LARGE */
-@media (min-width: var(--desktop-large)) {}
+@media (min-width: 1280px) {}
