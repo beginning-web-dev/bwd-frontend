@@ -1,0 +1,101 @@
+@import url("reset.css");
+
+/* This is a mobile-first approach to styling. Refer to mediaqueries for styling at different screen sizes. Else, the rest of the stylings are done for mobile. */
+
+/* VARIABLES */
+:root {
+    --primary-dark: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-dark);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+
+    font-size: 1.6rem;
+
+    a {
+        color: white;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        display: flex;
+        margin: 0 1rem;
+        align-items: center;
+
+        ul {
+            line-height: 4rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Class given to first item of list */
+        .list-heading {
+            font-weight: bold;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    img {
+        width: 8rem;
+        margin: 5rem
+    }
+}
+
+/* MEDIA QUERIES */
+/* ================= */
+/* MOBILE */
+@media (min-width: 488px) {}
+
+/* TABLET */
+@media (min-width: 768px) {
+    footer {
+        font-size: 1.5rem;
+
+        .row {
+            width: 80%;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .col {
+            /* Class given to first item of list */
+            .list-heading {
+                font-weight: bold;
+                margin-bottom: 1rem;
+                font-size: 1.3em;
+            }
+
+            ul {
+                line-height: 2rem;
+                text-align: start;
+                margin-bottom: 2rem;
+            }
+
+            &.col--w30 {
+                width: 30%;
+            }
+        }
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {}
+
+/* DESKTOP LARGE */
+@media (min-width: 1280px) {}
