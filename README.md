@@ -32,6 +32,9 @@ git push origin bwd-5 # push your files up as a branch
 3. Creating the PR (Pull Request) by navigating on the repo on GitHub and click "Compare & pull request" https://github.com/beginning-web-dev/bwd-frontend
     ![Github interface](images/compareAndPullRequest.png)
 
+    **NOTE:** Make sure to echange the base to "develop", that way we're requesting to merge into the right branch for development.
+    ![Github interface](images/baseDevelop.png)
+
 4. Rename the title as [ticketNum] (brief description), then you can add specific details to the box under if appropriate. List them as bulletpoints.
     ![Github interface](images/prDescription.png)
 
