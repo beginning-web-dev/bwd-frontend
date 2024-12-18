@@ -53,7 +53,7 @@
     height: auto;
 }
 
-.cta-btn {
+.meetup-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +72,7 @@
     margin-right: 5px;
 }
 
-.cta-btn a {
+.meetup-btn a {
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -84,7 +84,7 @@
 }
 
 /* Hover effect for the CTA button */
-.cta-btn:hover {
+.meetup-btn:hover {
     background-color: #330371;
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(252, 2, 106, 0.7), 0 0 30px rgba(72, 245, 135, 0.4);
@@ -120,7 +120,7 @@
         text-align: start;
     }
 
-    .cta-btn {
+    .meetup-btn {
         font-size: 20px;
         padding: 1vw 1.5vw;
 
@@ -167,7 +167,7 @@
         margin-bottom: 2em; 
     }
 
-    .cta-btn {
+    .meetup-btn {
         font-size: 24px;
         padding: 1vw 1.5vw; 
     }
