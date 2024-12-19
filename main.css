@@ -10,16 +10,23 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: inter;
+}
+
+
 .event__container{
     display: flex;
     flex-direction: column;
-    padding: 60px;
+    padding: 30px;
     height: 800px;
     width: 100%;
 }
 
 .event__title{
     padding: 20px 10px;
+    font-weight: 400;
+    font-size: 48px;
 }
 
 .container {
@@ -33,21 +40,33 @@
     gap: 10px;
     margin-bottom: 10px;
     align-items: center;
+
 }
 
 .event-date {
     text-align: center;
     margin: auto;
-    background-color:#FFE77176;
+    background-color:#FFE771BB;
     border-radius: 8px;
     padding: 8px 10px;
 }
 
 .container .event:nth-of-type(even) .event-date {
-    background-color:#7642BA45;
+    background-color:#7642BA70;
+}
+
+.event-info h3 {
+    padding-bottom: 10px;
+}
+
+.event-info p {
+    color: grey;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgrey;
 }
 
 
-
-.event-info {
+.bold-text {
+    color: #7642BA;
+    font-weight: 700;
 }
