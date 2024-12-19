@@ -12,21 +12,30 @@
 
 1. Clone the repo via HTTPS, and switch to "develop":
 ```sh
-git clone https://github.com/beginning-web-dev/bwd-frontend  # pull remote repo to local
-cd bwd-frontend # navigate to work directory
-git switch develop # switch from main (default) to develop branch
+# pull remote repo to local
+git clone https://github.com/beginning-web-dev/bwd-frontend  
+
+# navigate to work directory
+cd bwd-frontend 
+
+# switch from main (default) to develop branch
+git switch develop 
 ```
 2. Making changes and pushing branch:
 ```sh
-git branch bwd-5 # create a new branch and name it your ticket number
+# create a new branch and name it your ticket number
+git branch bwd-5 
 
 # work on your task then stage, commit, and push your work...
 
-git add <file1> <file2> # add the files you want to stage, alternatively you could do 'git add .' to add all modified files
+# add the files you want to stage, alternatively you could do 'git add .' to add all modified files
+git add <file1> <file2> 
 
-git commit -m "added html and css for footersection" # commit your staged files with a message
+# commit your staged files with a message
+git commit -m "added html and css for footersection" 
 
-git push origin bwd-5 # push your files up as a branch
+# push your files up as a branch
+git push origin bwd-5 
 ```
 
 3. Creating the PR (Pull Request) by navigating on the repo on GitHub and click "Compare & pull request" https://github.com/beginning-web-dev/bwd-frontend
@@ -43,18 +52,30 @@ git push origin bwd-5 # push your files up as a branch
 
 6. If you happen to have requests to change parts of your code, it's the same process:
 ```sh
-git branch # check you're on the right branch, in this case I expect this to return bwd-5
-git switch bwd-5 # go to the branch currently up for PR
+# check you're on the right branch, in this case I expect this to return bwd-5
+git branch 
+
+# go to the branch currently up for PR
+git switch bwd-5 
 
 # address comments and fixes
 
-git add <file1> <file2> # stage files with changes
-git commit -m "addressed issues from reviewers" # commit and add message
-git push origin bwd-5 # update the branch with PR
+# stage files with changes
+git add <file1> <file2> 
+
+# commit and add message
+git commit -m "addressed issues from reviewers" 
+
+# update the branch with PR
+git push origin bwd-5 
 ```
 7. Once you've passed review, code approved, and your branch has been merged to "develop" branch, you need to update your local "develop" branch. It's good practice to stay updated!
 ```sh
     git switch develop 
-    git pull # your local develop branch is synced up with the remote branch now!
-    git branch -d bwd-5 # if you've completed the task at this point, you remove that branch to clean up
+
+    # your local develop branch is synced up with the remote branch now!
+    git pull 
+
+    # if you've completed the task at this point, you remove that branch to clean up
+    git branch -d bwd-5 
 ```
