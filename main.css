@@ -1,0 +1,42 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid red;
+}
+
+.event {
+    border: 2px solid blue;
+    display: flex;
+}
+
+.event-date {
+    border: 2px solid lightgreen;
+    text-align: center;
+    background-color: #FFE77199;
+    margin: auto;
+}
+
+.container .event:nth-of-type(even) .event-date {
+    background-color: #7642BA99;
+}
+
+
+
+.event-info {
+    border: 2px solid orange;
+}
+
+hr {
+    border: 1px solid grey;
+    margin: .5rem;
+}
