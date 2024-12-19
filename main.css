@@ -18,9 +18,9 @@ html{
 .event__container{
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    height: 800px;
-    width: 100%;
+    margin: 62px  99px;           
+    height: 80%;
+    width: 80%;
 }
 
 .event__title{
@@ -36,16 +36,13 @@ html{
 
 .event {
     display: flex;
-    padding: 10px;
     gap: 10px;
-    margin-bottom: 10px;
     align-items: center;
 
 }
 
 .event-date {
     text-align: center;
-    margin: auto;
     background-color:#FFE771BB;
     border-radius: 8px;
     padding: 8px 10px;
@@ -56,7 +53,7 @@ html{
 }
 
 .event-info h3 {
-    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 .event-info p {
