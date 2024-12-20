@@ -50,7 +50,7 @@ html{
     height: 12%;
     background-color:#FFE771BB;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     flex-direction: column;
 }
 
@@ -72,6 +72,8 @@ html{
 
 .event-info {
     padding: 10px 0 0 0;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .event-info h3 {
