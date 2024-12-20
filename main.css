@@ -44,22 +44,34 @@ html{
 
 .event-date {
     border: 1px solid #FFE771FF;
-    text-align: center;
     align-items: center;
-    width: 200px;
-    height: 100px;
+    justify-content: center;
+    width: 12%;
+    height: 12%;
     background-color:#FFE771BB;
     border-radius: 10px;
     padding: 10px;
+    flex-direction: column;
 }
 
 .event-date h2 {
-    font-size: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: .7;
+}
+
+.event-date p {
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .container .event:nth-of-type(even) .event-date {
     border: 1px solid #7642BA70;
     background-color:#7642BA70;
+}
+
+.event-info {
+    padding: 10px 0 0 0;
 }
 
 .event-info h3 {
