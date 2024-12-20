@@ -14,9 +14,12 @@ html{
     font-family: inter;
 }
 
+/*Utility Classes */
+.flex {
+    display: flex;
+}
 
 .event__container{
-    display: flex;
     flex-direction: column;
     margin: 62px  99px;           
     height: 80%;
@@ -30,25 +33,32 @@ html{
 }
 
 .container {
-    display: flex;
     flex-direction: column;
 }
 
 .event {
-    display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 
 }
 
 .event-date {
+    border: 1px solid #FFE771FF;
     text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
     background-color:#FFE771BB;
-    border-radius: 8px;
-    padding: 8px 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.event-date h2 {
+    font-size: 30px;
 }
 
 .container .event:nth-of-type(even) .event-date {
+    border: 1px solid #7642BA70;
     background-color:#7642BA70;
 }
 
@@ -61,7 +71,6 @@ html{
     padding-bottom: 30px;
     border-bottom: 1px solid lightgrey;
 }
-
 
 .bold-text {
     color: #7642BA;
