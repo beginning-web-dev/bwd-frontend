@@ -1,0 +1,34 @@
+/* Logo colors: Yellow #f6b704 Black #000 
+Navbar colors: Purple #7642ba Current page #ffe771 Unselected page #fff*/
+/* Navbar */
+nav {
+
+  ul {
+    background-color: #7642ba;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 95px;
+    overflow: hidden;
+    height: 67px;
+    min-width: 60%;
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 24.5px 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .bwd-logo {
+    width: 40px;
+    padding-right: 50px;
+  }
+}
