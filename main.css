@@ -1,34 +1,219 @@
-/* Logo colors: Yellow #f6b704 Black #000 
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile-first approach (default for smaller screens) */
+:root {
+    --primary: #7642BA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Logo colors: Yellow #f6b704 Black #000
 Navbar colors: Purple #7642ba Current page #ffe771 Unselected page #fff*/
 /* Navbar */
 nav {
 
-  ul {
-    background-color: #7642ba;
-    list-style-type: none;
-    margin: 0;
-    padding: 0px 95px;
-    overflow: hidden;
-    height: 67px;
-    min-width: 60%;
-  }
+    ul {
+        background-color: #7642ba;
+        list-style-type: none;
+        margin: 0;
+        padding: 0px 95px;
+        overflow: hidden;
+        height: 67px;
+        min-width: 60%;
+    }
 
-  li {
-    float: left;
-  }
+    li {
+        float: left;
+    }
 
-  a {
-    color: #fff;
+    a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        padding: 24.5px 20px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .bwd-logo {
+        width: 40px;
+        padding-right: 50px;
+    }
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 10%;
+    height: auto;
+}
+
+.text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.header-text {
+    font-size: 42px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.sub-text {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.image-col {
+    text-align: center;
+}
+
+.hero-img {
+    border-radius: 25%;
+    border: 10px solid purple;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.meetup-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
     font-size: 16px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    padding: 24.5px 20px;
-    text-decoration: none;
-    display: block;
-  }
+    border-radius: 5px;
+    border: none;
+    padding: 1vw 3vw;
+    color: white;
+    cursor: pointer;
+}
 
-  .bwd-logo {
+.meetup-logo {
     width: 40px;
-    padding-right: 50px;
-  }
+    height: auto;
+    margin-right: 5px;
+}
+
+.meetup-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+/* Hover effect for the CTA button */
+.meetup-btn:hover {
+    background-color: #330371;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(252, 2, 106, 0.7), 0 0 30px rgba(72, 245, 135, 0.4);
+}
+
+@media (min-width: 768px) {
+    .hero-container {
+        flex-direction: row; /* Switch to row layout on larger screens */
+        gap: 50px;
+        padding: 5% 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-col {
+        flex: 2;
+        text-align: start;
+        align-items: start;
+    }
+
+    .header-text {
+        font-size: 42px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        text-align: start;
+    }
+
+    .sub-text {
+        font-size: 1.1rem;
+        margin-bottom: 2em;
+        text-align: start;
+    }
+
+    .meetup-btn {
+        font-size: 20px;
+        padding: 1vw 1.5vw;
+
+    }
+
+    .image-col{
+        flex: 1;
+        width: 200vw;
+    }
+
+    .hero-img{
+        width: 40vw;
+        height: 50vh;
+        border-radius: 25%;
+
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        flex-direction: row; /* Switch to row layout on larger screens */
+        justify-content: space-between; /* Space out the columns */
+        align-items: flex-start;
+        padding: 100px;
+    }
+
+    .text-col {
+        flex: 2;
+        text-align: start;
+        align-items: start;
+    }
+
+    .header-text {
+        font-size: 72px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+    }
+
+    .sub-text {
+        font-size: 1.2rem;
+        margin-bottom: 2em;
+    }
+
+    .meetup-btn {
+        font-size: 24px;
+        padding: 1vw 1.5vw;
+    }
+
+    .image-col{
+        flex: 1;
+    }
+
+    .hero-img{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border: 15px solid purple;
+
+    }
 }
